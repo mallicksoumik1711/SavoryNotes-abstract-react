@@ -1,0 +1,52 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Spaghetti Carbonara",
+            "description": "A classic Italian pasta dish with creamy egg sauce, pancetta, and Parmesan cheese.",
+            "ingredients": [
+                "200g spaghetti",
+                "100g pancetta",
+                "2 eggs",
+                "50g Parmesan cheese",
+                "Salt",
+                "Black pepper"
+            ],
+            "steps": [
+                "Boil pasta until al dente.",
+                "Cook pancetta until crispy.",
+                "Whisk eggs with Parmesan.",
+                "Mix hot pasta with pancetta and egg mixture.",
+                "Season with salt and pepper."
+            ],
+            "prepTime": "10 minutes",
+            "cookTime": "20 minutes",
+            "servings": 2,
+            "author": "Chef Abc"
+        },
+        {
+            "id": 2,
+            "title": "Vegetable Stir Fry",
+            "description": "Quick and healthy stir-fried vegetables with soy sauce and garlic.",
+            "ingredients": [
+                "1 cup broccoli",
+                "1 cup carrots",
+                "1 bell pepper",
+                "2 tbsp soy sauce",
+                "2 garlic cloves",
+                "1 tbsp olive oil"
+            ],
+            "steps": [
+                "Chop all vegetables.",
+                "Heat oil in a wok.",
+                "Add garlic and sauté.",
+                "Add vegetables and stir fry.",
+                "Add soy sauce and cook for 2 minutes."
+            ],
+            "prepTime": "15 minutes",
+            "cookTime": "10 minutes",
+            "servings": 3,
+            "author": "Chef Def"
+        }
+    ]
+}
