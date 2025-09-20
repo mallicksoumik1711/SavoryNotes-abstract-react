@@ -1,106 +1,243 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "title": "Spaghetti Carbonara",
-      "description": "A classic Italian pasta dish with creamy egg sauce, pancetta, and Parmesan cheese.",
+      "id": 1,
+      "title": "Paneer Butter Masala",
+      "description": "Creamy tomato-based curry with soft cubes of paneer.",
       "ingredients": [
-        "200g spaghetti",
-        "100g pancetta",
-        "2 eggs",
-        "50g Parmesan cheese",
+        "250g paneer",
+        "2 tomatoes",
+        "1 onion",
+        "2 tbsp butter",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric",
+        "1 tsp chili powder",
+        "1/2 tsp garam masala",
+        "1/4 cup cream",
         "Salt",
-        "Black pepper"
+        "Fresh coriander"
       ],
       "steps": [
-        "Boil pasta until al dente.",
-        "Cook pancetta until crispy.",
-        "Whisk eggs with Parmesan.",
-        "Mix hot pasta with pancetta and egg mixture.",
-        "Season with salt and pepper."
+        "Heat butter in a pan and sauté onions until golden.",
+        "Add ginger-garlic paste and cook for 2 minutes.",
+        "Add tomatoes, turmeric, chili powder and cook until soft.",
+        "Blend into a smooth paste and return to pan.",
+        "Add paneer cubes and cream, simmer for 5 minutes.",
+        "Garnish with coriander."
       ],
       "prepTime": "10 minutes",
       "cookTime": "20 minutes",
       "servings": 2,
-      "author": "Chef Abc"
+      "author": "Chef Raj",
+      "image": "https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg"
     },
     {
-      "id": "2",
-      "title": "Vegetable Stir Fry",
-      "description": "Quick and healthy stir-fried vegetables with soy sauce and garlic.",
+      "id": 2,
+      "title": "Chole (Chickpea Curry)",
+      "description": "Spicy and tangy chickpea curry from North India.",
       "ingredients": [
-        "1 cup broccoli",
-        "1 cup carrots",
-        "1 bell pepper",
-        "2 tbsp soy sauce",
-        "2 garlic cloves",
-        "1 tbsp olive oil"
+        "1 cup chickpeas",
+        "2 onions",
+        "2 tomatoes",
+        "2 tsp chole masala",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric",
+        "1 tsp cumin seeds",
+        "2 tbsp oil",
+        "Salt",
+        "Fresh coriander"
       ],
       "steps": [
-        "Chop all vegetables.",
-        "Heat oil in a wok.",
-        "Add garlic and sauté.",
-        "Add vegetables and stir fry.",
-        "Add soy sauce and cook for 2 minutes."
+        "Soak chickpeas overnight and boil until tender.",
+        "Heat oil and add cumin seeds, then onions.",
+        "Add ginger-garlic paste and sauté.",
+        "Add tomatoes, turmeric, chole masala, and cook to a paste.",
+        "Add boiled chickpeas and simmer for 10 minutes.",
+        "Garnish with coriander."
+      ],
+      "prepTime": "10 minutes",
+      "cookTime": "40 minutes",
+      "servings": 4,
+      "author": "Chef Priya",
+      "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Masala Dosa",
+      "description": "Crispy South Indian rice crepes stuffed with spiced potato filling.",
+      "ingredients": [
+        "2 cups rice",
+        "1 cup urad dal",
+        "1 tsp fenugreek seeds",
+        "3 boiled potatoes",
+        "1 onion",
+        "1 green chili",
+        "1/2 tsp mustard seeds",
+        "Curry leaves",
+        "Salt",
+        "Oil"
+      ],
+      "steps": [
+        "Soak rice and dal overnight and grind into a smooth batter.",
+        "Ferment the batter for 8 hours.",
+        "Prepare potato filling with onion, green chili, mustard seeds, curry leaves.",
+        "Heat a pan, pour batter to make a thin crepe.",
+        "Place filling, fold dosa, cook until golden."
+      ],
+      "prepTime": "20 minutes",
+      "cookTime": "30 minutes",
+      "servings": 3,
+      "author": "Chef Anil",
+      "image": "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Butter Naan",
+      "description": "Soft and fluffy Indian flatbread baked with butter.",
+      "ingredients": [
+        "2 cups all-purpose flour",
+        "1/2 cup yogurt",
+        "1/2 tsp baking powder",
+        "1/2 tsp baking soda",
+        "1 tsp sugar",
+        "Salt",
+        "Butter"
+      ],
+      "steps": [
+        "Mix flour, baking powder, baking soda, salt, sugar, and yogurt into dough.",
+        "Knead for 10 minutes and let it rest for 1 hour.",
+        "Roll dough into small rounds.",
+        "Cook on hot tawa, brush with butter."
       ],
       "prepTime": "15 minutes",
-      "cookTime": "10 minutes",
-      "servings": 3,
-      "author": "Chef Def"
+      "cookTime": "20 minutes",
+      "servings": 4,
+      "author": "Chef Meera",
+      "image": "https://images.pexels.com/photos/5835353/pexels-photo-5835353.jpeg"
     },
     {
-      "id": 1758355728807,
-      "title": "Chocolate Mug Cake",
-      "description": "A quick and easy chocolate cake made in a mug using a microwave.",
-      "prepTime": "5 minutes",
-      "cookTime": "2 minutes",
-      "servings": 1,
+      "id": 5,
+      "title": "Aloo Gobi",
+      "description": "Spiced Indian potato and cauliflower curry.",
       "ingredients": [
-        "4 tbsp all-purpose flour",
-        "4 tbsp sugar",
-        "2 tbsp cocoa powder",
-        "1/4 tsp baking powder",
-        "3 tbsp milk",
-        "2 tbsp vegetable oil",
-        "1/4 tsp vanilla extract",
-        "Chocolate chips (optional)"
+        "2 potatoes",
+        "1 cauliflower",
+        "1 onion",
+        "1 tomato",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric",
+        "1 tsp cumin seeds",
+        "1 tsp chili powder",
+        "1 tsp garam masala",
+        "2 tbsp oil",
+        "Salt",
+        "Fresh coriander"
       ],
       "steps": [
-        "Mix flour, sugar, cocoa powder, and baking powder in a mug.",
-        "Add milk, oil, and vanilla extract; stir until smooth.",
-        "Stir in chocolate chips if using.",
-        "Microwave on high for 90 seconds or until cooked through.",
-        "Let it cool for a minute and enjoy."
+        "Heat oil and add cumin seeds and onion.",
+        "Add ginger-garlic paste, tomatoes, turmeric, chili powder.",
+        "Add potatoes and cauliflower, cook covered until tender.",
+        "Add garam masala and garnish with coriander."
       ],
-      "author": "Admin"
-    },
-    {
-      "id": 1758356561730,
-      "title": "Classic Pancakes",
-      "description": "Fluffy and soft pancakes perfect for breakfast with syrup and butter.",
       "prepTime": "10 minutes",
-      "cookTime": "15 minutes",
-      "servings": 1,
+      "cookTime": "25 minutes",
+      "servings": 3,
+      "author": "Chef Neha",
+      "image": "https://images.pexels.com/photos/33643298/pexels-photo-33643298.jpeg"
+    },
+    {
+      "id": 6,
+      "title": "Rajma Masala",
+      "description": "Red kidney bean curry with rich spices, popular in North India.",
       "ingredients": [
-        "1 cup all-purpose flour",
-        "2 tbsp sugar",
-        "1 tbsp baking powder",
-        "1/2 tsp salt",
-        "1 cup milk",
-        "1 egg",
-        "2 tbsp melted butter",
-        "1 tsp vanilla extract"
+        "1 cup rajma (kidney beans)",
+        "2 onions",
+        "2 tomatoes",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric",
+        "1 tsp chili powder",
+        "1 tsp garam masala",
+        "2 tbsp oil",
+        "Salt",
+        "Fresh coriander"
       ],
       "steps": [
-        "In a bowl, mix flour, sugar, baking powder, and salt.",
-        "In another bowl, whisk milk, egg, melted butter, and vanilla.",
-        "Pour wet ingredients into dry ingredients and stir until combined.",
-        "Heat a non-stick pan over medium heat and pour batter.",
-        "Cook until bubbles form, flip, and cook until golden.",
-        "Serve with syrup and butter."
+        "Soak rajma overnight and boil until soft.",
+        "Heat oil, sauté onions and ginger-garlic paste.",
+        "Add tomatoes, turmeric, chili powder, cook to paste.",
+        "Add rajma and simmer 15 minutes.",
+        "Add garam masala and garnish."
       ],
-      "author": "Admin"
+      "prepTime": "10 minutes",
+      "cookTime": "45 minutes",
+      "servings": 4,
+      "author": "Chef Ravi",
+      "image": "https://images.pexels.com/photos/12737912/pexels-photo-12737912.jpeg"
+    },
+    {
+      "id": 7,
+      "title": "Chicken Biryani",
+      "description": "Fragrant layered rice dish with marinated chicken and spices.",
+      "ingredients": [
+        "2 cups basmati rice",
+        "500g chicken",
+        "2 onions",
+        "2 tomatoes",
+        "1 cup yogurt",
+        "2 tsp ginger-garlic paste",
+        "1 tsp turmeric",
+        "1 tsp chili powder",
+        "2 tsp garam masala",
+        "Saffron strands",
+        "Mint leaves",
+        "Coriander leaves",
+        "Oil",
+        "Salt"
+      ],
+      "steps": [
+        "Marinate chicken with yogurt, spices, and salt for 2 hours.",
+        "Fry onions until golden, add tomatoes, cook to soft paste.",
+        "Add chicken and cook until 70% done.",
+        "Boil rice separately with salt and saffron.",
+        "Layer chicken and rice, cover, and cook on low heat 20 minutes.",
+        "Garnish with mint and coriander."
+      ],
+      "prepTime": "30 minutes",
+      "cookTime": "50 minutes",
+      "servings": 4,
+      "author": "Chef Arjun",
+      "image": "https://images.pexels.com/photos/7837978/pexels-photo-7837978.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Palak Paneer",
+      "description": "Spinach and paneer cooked with aromatic spices.",
+      "ingredients": [
+        "250g paneer",
+        "2 cups spinach",
+        "1 onion",
+        "2 tomatoes",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp turmeric",
+        "1 tsp chili powder",
+        "1 tsp cumin seeds",
+        "2 tbsp oil",
+        "Salt",
+        "Cream (optional)"
+      ],
+      "steps": [
+        "Blanch spinach and blend into a puree.",
+        "Heat oil, add cumin seeds and onions.",
+        "Add ginger-garlic paste and tomatoes.",
+        "Add spices and spinach puree.",
+        "Add paneer cubes, simmer 5 minutes.",
+        "Optional: add cream."
+      ],
+      "prepTime": "15 minutes",
+      "cookTime": "20 minutes",
+      "servings": 3,
+      "author": "Chef Suman",
+      "image": "https://images.pexels.com/photos/8625948/pexels-photo-8625948.jpeg"
     }
-    
   ]
 }
