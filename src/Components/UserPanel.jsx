@@ -59,7 +59,7 @@ function UserPanel() {
               <Card className="h-100 shadow-sm">
                 <Card.Img
                   variant="top"
-                  src={recipe.image}
+                  src={recipe.image || "https://via.placeholder.com/200x200?text=No+Image"}
                   style={{ height: "200px", objectFit: "cover" }}
                 />
                 <Card.Body className="d-flex flex-column">
@@ -98,7 +98,7 @@ function UserPanel() {
             </Modal.Header>
             <Modal.Body>
               <img
-                src={selectedRecipe.image}
+                src={selectedRecipe.image || "https://via.placeholder.com/400x300?text=No+Image"}
                 alt={selectedRecipe.title}
                 className="img-fluid rounded mb-3"
               />
