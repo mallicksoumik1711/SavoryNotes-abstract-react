@@ -7,10 +7,17 @@ function Favorites() {
   const recipes = useSelector(state => state.recipes) // array of all recipes
 
   if (!user)
-    return <p className="text-center mt-5">Please login to view favorites.</p>
+    return (
+      <div
+        className="d-flex justify-content-center align-items-center text-light"
+        style={{ minHeight: "80vh" }}
+      >
+        <p className="text-center">Please login to view favorites.</p>
+      </div>
+    )
 
   const favoriteRecipes = recipes.recipes.filter(r =>
-    user.favourites.includes(r.id)
+    user.favorites.includes(r.id)
   )
 
   return (
@@ -18,9 +25,12 @@ function Favorites() {
       <h2 className="text-warning text-center mb-4">My Favorites</h2>
       <Row>
         {favoriteRecipes.length === 0 ? (
-          <p className="text-center text-light">
-            You have no favorite recipes yet.
-          </p>
+          <div
+            className="d-flex justify-content-center align-items-center text-light"
+            style={{ minHeight: "60vh" }}
+          >
+            <p className="text-center">You have no favorite recipes yet.</p>
+          </div>
         ) : (
           favoriteRecipes.map(recipe => (
             <Col

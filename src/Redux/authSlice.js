@@ -25,6 +25,7 @@ export const loginUser = createAsyncThunk(
   }
 );
 
+// src/Redux/authSlice.js
 const authSlice = createSlice({
   name: "auth",
   initialState: {
@@ -37,6 +38,11 @@ const authSlice = createSlice({
     logout: (state) => {
       state.user = null;
       state.isAuthenticated = false;
+    },
+    updateFavorites: (state, action) => {
+      if (state.user) {
+        state.user = { ...state.user, favorites: action.payload }; // <- create a new object
+      }
     },
   },
   extraReducers: (builder) => {
@@ -57,5 +63,5 @@ const authSlice = createSlice({
   },
 });
 
-export const { logout } = authSlice.actions;
+export const { logout, updateFavorites } = authSlice.actions;
 export default authSlice.reducer;

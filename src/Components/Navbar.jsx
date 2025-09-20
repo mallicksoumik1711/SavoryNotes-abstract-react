@@ -5,6 +5,7 @@ import { logout } from "../Redux/authSlice";
 function Navbar() {
   const navigate = useNavigate();
   const { isAuthenticated } = useSelector((state) => state.auth);
+  const { user } = useSelector((state) => state.auth);
   const dispatch = useDispatch();
 
   const handleLogout = () => {
@@ -40,12 +41,20 @@ function Navbar() {
             <li className="nav-link">
               <Link to="/blogs" className="text-light text-decoration-none">Blogs</Link>
             </li>
-            <li className="nav-link">
-              <Link to="/recipes" className="text-light text-decoration-none">Recipes</Link>
-            </li>
-            <li className="nav-link">
+            {/* <li className="nav-link">
               <Link to="/favorite" className="text-light text-decoration-none">Favorites</Link>
-            </li>
+            </li> */}
+            {user && user.admin ? (
+              // Admin sees Admin Panel instead of Favorites
+              <li className="nav-link">
+                <Link to="/favorites" className="text-light text-decoration-none">Admin Panel</Link>
+              </li>
+            ) : (
+              // Guest or regular user sees Favorites
+              <li className="nav-link">
+                <Link to="/favorite" className="text-light text-decoration-none">Favorites</Link>
+              </li>
+            )}
           </ul>
         </div>
 

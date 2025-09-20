@@ -1,7 +1,7 @@
 {
   "recipes": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Paneer Butter Masala",
       "description": "Creamy tomato-based curry with soft cubes of paneer.",
       "ingredients": [
@@ -32,7 +32,7 @@
       "image": "https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Chole (Chickpea Curry)",
       "description": "Spicy and tangy chickpea curry from North India.",
       "ingredients": [
@@ -62,7 +62,7 @@
       "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Masala Dosa",
       "description": "Crispy South Indian rice crepes stuffed with spiced potato filling.",
       "ingredients": [
@@ -91,7 +91,7 @@
       "image": "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Butter Naan",
       "description": "Soft and fluffy Indian flatbread baked with butter.",
       "ingredients": [
@@ -116,7 +116,7 @@
       "image": "https://images.pexels.com/photos/5835353/pexels-photo-5835353.jpeg"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Aloo Gobi",
       "description": "Spiced Indian potato and cauliflower curry.",
       "ingredients": [
@@ -146,7 +146,7 @@
       "image": "https://images.pexels.com/photos/33643298/pexels-photo-33643298.jpeg"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Rajma Masala",
       "description": "Red kidney bean curry with rich spices, popular in North India.",
       "ingredients": [
@@ -175,7 +175,7 @@
       "image": "https://images.pexels.com/photos/12737912/pexels-photo-12737912.jpeg"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Chicken Biryani",
       "description": "Fragrant layered rice dish with marinated chicken and spices.",
       "ingredients": [
@@ -209,7 +209,7 @@
       "image": "https://images.pexels.com/photos/7837978/pexels-photo-7837978.jpeg"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Palak Paneer",
       "description": "Spinach and paneer cooked with aromatic spices.",
       "ingredients": [
@@ -238,6 +238,38 @@
       "servings": 3,
       "author": "Chef Suman",
       "image": "https://images.pexels.com/photos/8625948/pexels-photo-8625948.jpeg"
+    },
+    {
+      "id": "9",
+      "title": "changed paneer",
+      "description": "xyz posting",
+      "ingredients": [
+        "paneer"
+      ],
+      "steps": [
+        "paneer changerd"
+      ],
+      "prepTime": "34",
+      "cookTime": "23",
+      "servings": "13",
+      "author": "PaneerPosting",
+      "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
+    },
+    {
+      "id": 10,
+      "title": "sdhfgladjsfhgddfju",
+      "description": "fjrlherityvbublaivtvlty8abvlietybvltoi4ybvqaelity",
+      "ingredients": [
+        "drsgwertqwe"
+      ],
+      "steps": [
+        "er5tyq45yw45y4"
+      ],
+      "prepTime": "34",
+      "cookTime": "344",
+      "servings": "4",
+      "author": "soumik",
+      "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
     }
   ]
 }

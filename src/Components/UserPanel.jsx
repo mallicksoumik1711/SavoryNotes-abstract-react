@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchRecipes } from "../Redux/recipesSlice";
 import { Card, Button, Modal, Row, Col } from "react-bootstrap";
+import { updateFavorites } from "../Redux/authSlice";
 
 function UserPanel() {
   const dispatch = useDispatch();
@@ -25,7 +26,8 @@ function UserPanel() {
       updatedFavorites = [...favorites, recipeId];
     }
 
-    setFavorites(updatedFavorites);
+    // setFavorites(updatedFavorites);
+    // dispatch(updateFavorites(updatedFavorites));
 
     // Update user in json-server
     try {
@@ -36,6 +38,8 @@ function UserPanel() {
         },
         body: JSON.stringify({ favorites: updatedFavorites }),
       });
+      setFavorites(updatedFavorites);
+      dispatch(updateFavorites(updatedFavorites));
     } catch (err) {
       console.error("Failed to update favorites:", err);
     }
@@ -51,7 +55,7 @@ function UserPanel() {
       <h2 className="text-center text-warning mb-4">All Recipes</h2>
 
       {loading ? (
-        <p className="text-light text-center">Loading...</p>
+        <p className="text-light text-center" style={{height: "80vh"}}>Loading...</p>
       ) : (
         <Row xs={1} sm={2} md={3} lg={4} className="g-4">
           {recipes.map((recipe) => (

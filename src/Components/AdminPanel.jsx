@@ -52,6 +52,7 @@ function AdminPanel() {
     setShowModal(false);
   };
 
+
   const handleArrayChange = (index, value, type) => {
     const updated = [...formData[type]];
     updated[index] = value;
