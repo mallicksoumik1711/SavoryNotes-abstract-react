@@ -1,52 +1,106 @@
 {
-    "recipes": [
-        {
-            "id": 1,
-            "title": "Spaghetti Carbonara",
-            "description": "A classic Italian pasta dish with creamy egg sauce, pancetta, and Parmesan cheese.",
-            "ingredients": [
-                "200g spaghetti",
-                "100g pancetta",
-                "2 eggs",
-                "50g Parmesan cheese",
-                "Salt",
-                "Black pepper"
-            ],
-            "steps": [
-                "Boil pasta until al dente.",
-                "Cook pancetta until crispy.",
-                "Whisk eggs with Parmesan.",
-                "Mix hot pasta with pancetta and egg mixture.",
-                "Season with salt and pepper."
-            ],
-            "prepTime": "10 minutes",
-            "cookTime": "20 minutes",
-            "servings": 2,
-            "author": "Chef Abc"
-        },
-        {
-            "id": 2,
-            "title": "Vegetable Stir Fry",
-            "description": "Quick and healthy stir-fried vegetables with soy sauce and garlic.",
-            "ingredients": [
-                "1 cup broccoli",
-                "1 cup carrots",
-                "1 bell pepper",
-                "2 tbsp soy sauce",
-                "2 garlic cloves",
-                "1 tbsp olive oil"
-            ],
-            "steps": [
-                "Chop all vegetables.",
-                "Heat oil in a wok.",
-                "Add garlic and sauté.",
-                "Add vegetables and stir fry.",
-                "Add soy sauce and cook for 2 minutes."
-            ],
-            "prepTime": "15 minutes",
-            "cookTime": "10 minutes",
-            "servings": 3,
-            "author": "Chef Def"
-        }
-    ]
+  "recipes": [
+    {
+      "id": "1",
+      "title": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish with creamy egg sauce, pancetta, and Parmesan cheese.",
+      "ingredients": [
+        "200g spaghetti",
+        "100g pancetta",
+        "2 eggs",
+        "50g Parmesan cheese",
+        "Salt",
+        "Black pepper"
+      ],
+      "steps": [
+        "Boil pasta until al dente.",
+        "Cook pancetta until crispy.",
+        "Whisk eggs with Parmesan.",
+        "Mix hot pasta with pancetta and egg mixture.",
+        "Season with salt and pepper."
+      ],
+      "prepTime": "10 minutes",
+      "cookTime": "20 minutes",
+      "servings": 2,
+      "author": "Chef Abc"
+    },
+    {
+      "id": "2",
+      "title": "Vegetable Stir Fry",
+      "description": "Quick and healthy stir-fried vegetables with soy sauce and garlic.",
+      "ingredients": [
+        "1 cup broccoli",
+        "1 cup carrots",
+        "1 bell pepper",
+        "2 tbsp soy sauce",
+        "2 garlic cloves",
+        "1 tbsp olive oil"
+      ],
+      "steps": [
+        "Chop all vegetables.",
+        "Heat oil in a wok.",
+        "Add garlic and sauté.",
+        "Add vegetables and stir fry.",
+        "Add soy sauce and cook for 2 minutes."
+      ],
+      "prepTime": "15 minutes",
+      "cookTime": "10 minutes",
+      "servings": 3,
+      "author": "Chef Def"
+    },
+    {
+      "id": 1758355728807,
+      "title": "Chocolate Mug Cake",
+      "description": "A quick and easy chocolate cake made in a mug using a microwave.",
+      "prepTime": "5 minutes",
+      "cookTime": "2 minutes",
+      "servings": 1,
+      "ingredients": [
+        "4 tbsp all-purpose flour",
+        "4 tbsp sugar",
+        "2 tbsp cocoa powder",
+        "1/4 tsp baking powder",
+        "3 tbsp milk",
+        "2 tbsp vegetable oil",
+        "1/4 tsp vanilla extract",
+        "Chocolate chips (optional)"
+      ],
+      "steps": [
+        "Mix flour, sugar, cocoa powder, and baking powder in a mug.",
+        "Add milk, oil, and vanilla extract; stir until smooth.",
+        "Stir in chocolate chips if using.",
+        "Microwave on high for 90 seconds or until cooked through.",
+        "Let it cool for a minute and enjoy."
+      ],
+      "author": "Admin"
+    },
+    {
+      "id": 1758356561730,
+      "title": "Classic Pancakes",
+      "description": "Fluffy and soft pancakes perfect for breakfast with syrup and butter.",
+      "prepTime": "10 minutes",
+      "cookTime": "15 minutes",
+      "servings": 1,
+      "ingredients": [
+        "1 cup all-purpose flour",
+        "2 tbsp sugar",
+        "1 tbsp baking powder",
+        "1/2 tsp salt",
+        "1 cup milk",
+        "1 egg",
+        "2 tbsp melted butter",
+        "1 tsp vanilla extract"
+      ],
+      "steps": [
+        "In a bowl, mix flour, sugar, baking powder, and salt.",
+        "In another bowl, whisk milk, egg, melted butter, and vanilla.",
+        "Pour wet ingredients into dry ingredients and stir until combined.",
+        "Heat a non-stick pan over medium heat and pour batter.",
+        "Cook until bubbles form, flip, and cook until golden.",
+        "Serve with syrup and butter."
+      ],
+      "author": "Admin"
+    }
+    
+  ]
 }

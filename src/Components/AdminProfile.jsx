@@ -1,8 +1,10 @@
 import { useSelector } from "react-redux";
+import AddRecipeForm from "./AddRecipeForm";
+import { useState } from "react";
 
 function AdminProfile() {
   const { admin } = useSelector((state) => state.admin);
-
+const [showForm, setShowForm] = useState(false); 
   return (
     <section
       className="d-flex justify-content-center align-items-center text-light"
@@ -11,6 +13,12 @@ function AdminProfile() {
         background: "linear-gradient(135deg, #2e2e2e 0%, #4b3f2f 100%)",
       }}
     >
+
+      {showForm ? (
+      // Show form centered on page
+      <AddRecipeForm onClose={() => setShowForm(false)} />
+    ) : (
+      // Show welcome card with Add Recipe button
       <div
         className="p-5 rounded-4 shadow-lg"
         style={{ backgroundColor: "rgba(28,28,28,0.95)", maxWidth: "600px", width: "100%" }}
@@ -40,11 +48,13 @@ function AdminProfile() {
               e.currentTarget.style.boxShadow =
                 "0 8px 15px rgba(0,0,0,0.2)";
             }}
+             onClick={() => setShowForm(true)}
           >
             Add Recipes
           </button>
         </div>
       </div>
+        )}
     </section>
   );
 }
