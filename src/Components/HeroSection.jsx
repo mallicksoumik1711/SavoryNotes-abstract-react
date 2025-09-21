@@ -91,7 +91,6 @@ function HeroSection() {
                     overflow: "hidden",
                 }}
             >
-                {/* Decorative Background Blobs */}
                 <div
                     style={{
                         position: "absolute",
@@ -119,7 +118,6 @@ function HeroSection() {
                     }}
                 ></div>
 
-                {/* Wave Divider */}
                     <svg
                         style={{ display: "block" }}
                         xmlns="http://www.w3.org/2000/svg"
@@ -132,7 +130,6 @@ function HeroSection() {
                         ></path>
                     </svg>
 
-                {/* Content */}
                 <div className="container position-relative" style={{ zIndex: 2 }}>
                     <h2
                         className="fw-bold mb-5 text-center"

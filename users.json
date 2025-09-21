@@ -6,9 +6,7 @@
       "email": "soumik@example.com",
       "password": "123456",
       "admin": false,
-      "favorites": [
-        10
-      ]
+      "favorites": []
     },
     {
       "id": "2",

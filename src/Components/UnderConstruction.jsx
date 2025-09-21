@@ -1,5 +1,5 @@
 
-// src/pages/UnderConstruction.jsx
+
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
@@ -25,7 +25,7 @@ function UnderConstruction() {
         {user && user.admin ? (
           <>
             <img
-              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" // generic admin avatar
+              src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" 
               alt="Admin Avatar"
               className="mb-3 rounded-circle"
               style={{ width: "100px", height: "100px", objectFit: "cover" }}
@@ -51,7 +51,7 @@ function UnderConstruction() {
           </>
         ) : (
           <>
-            <h1 className="fw-bold text-warning mb-3">🚧 404 NOT FOUND 🚧</h1>
+            <h1 className="fw-bold text-warning mb-3"> 404 NOT FOUND </h1>
             <p className="text-secondary mb-4">
               The page you are looking for was not found.
             </p>

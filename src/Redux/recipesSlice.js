@@ -1,4 +1,4 @@
-// src/Redux/recipesSlice.js
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
 export const fetchRecipes = createAsyncThunk("recipes/fetchRecipes", async () => {
@@ -21,7 +21,7 @@ export const updateRecipe = createAsyncThunk("recipes/updateRecipe", async ({ id
   const res = await fetch(`http://localhost:3002/recipes/${id}`, {
     method: "PUT",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(recipe),
+    body: JSON.stringify({...recipe, id}),
   });
   const data = await res.json();
   return data;
@@ -50,11 +50,11 @@ const recipesSlice = createSlice({
 
       .addCase(addRecipe.fulfilled, (state, action) => { state.recipes.push(action.payload); })
       .addCase(updateRecipe.fulfilled, (state, action) => {
-        const index = state.recipes.findIndex(r => r.id === action.payload.id);
+        const index = state.recipes.findIndex(r => String(r.id) === String(action.payload.id));
         if (index !== -1) state.recipes[index] = action.payload;
       })
       .addCase(deleteRecipe.fulfilled, (state, action) => {
-        state.recipes = state.recipes.filter(r => r.id !== action.payload);
+        state.recipes = state.recipes.filter(r => String(r.id) !== String(action.payload));
       });
   }
 });

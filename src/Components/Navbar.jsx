@@ -41,16 +41,11 @@ function Navbar() {
             <li className="nav-link">
               <Link to="/blogs" className="text-light text-decoration-none">Blogs</Link>
             </li>
-            {/* <li className="nav-link">
-              <Link to="/favorite" className="text-light text-decoration-none">Favorites</Link>
-            </li> */}
             {user && user.admin ? (
-              // Admin sees Admin Panel instead of Favorites
               <li className="nav-link">
                 <Link to="/favorites" className="text-light text-decoration-none">Admin Panel</Link>
               </li>
             ) : (
-              // Guest or regular user sees Favorites
               <li className="nav-link">
                 <Link to="/favorite" className="text-light text-decoration-none">Favorites</Link>
               </li>

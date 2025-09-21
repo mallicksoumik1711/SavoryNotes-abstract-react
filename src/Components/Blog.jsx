@@ -1,4 +1,4 @@
-// src/pages/Blog.jsx
+
 import React from "react";
 import BlogCard from "./BlogCard";
 

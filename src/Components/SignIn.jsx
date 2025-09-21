@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loginUser } from "../Redux/authSlice";   // <-- now using authSlice
+import { loginUser } from "../Redux/authSlice";   
 import { useNavigate } from "react-router-dom";
 
 function SignIn() {
@@ -25,7 +25,7 @@ function SignIn() {
         }else{
             navigate("/userPanel");
         }
-         // after login success
+        
     }
   }, [isAuthenticated, navigate]);
 
@@ -38,7 +38,6 @@ function SignIn() {
         overflow: "hidden",
       }}
     >
-      {/* Glow effect */}
       <div
         className="position-absolute"
         style={{
@@ -52,7 +51,6 @@ function SignIn() {
         }}
       ></div>
 
-      {/* Card */}
       <div
         className="p-5 rounded-4 shadow-lg"
         style={{

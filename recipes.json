@@ -1,9 +1,11 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "title": "Paneer Butter Masala",
+      "title": "Paneer Butter Masala edited",
       "description": "Creamy tomato-based curry with soft cubes of paneer.",
+      "prepTime": "10 minutes",
+      "cookTime": "20 minutes",
+      "servings": 2,
       "ingredients": [
         "250g paneer",
         "2 tomatoes",
@@ -25,11 +27,9 @@
         "Add paneer cubes and cream, simmer for 5 minutes.",
         "Garnish with coriander."
       ],
-      "prepTime": "10 minutes",
-      "cookTime": "20 minutes",
-      "servings": 2,
       "author": "Chef Raj",
-      "image": "https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg"
+      "image": "https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg",
+      "id": "1"
     },
     {
       "id": "2",
@@ -62,9 +62,11 @@
       "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg"
     },
     {
-      "id": "3",
-      "title": "Masala Dosa",
+      "title": "Masala Dosa masala",
       "description": "Crispy South Indian rice crepes stuffed with spiced potato filling.",
+      "prepTime": "20 minutes",
+      "cookTime": "30 minutes",
+      "servings": 3,
       "ingredients": [
         "2 cups rice",
         "1 cup urad dal",
@@ -84,16 +86,16 @@
         "Heat a pan, pour batter to make a thin crepe.",
         "Place filling, fold dosa, cook until golden."
       ],
-      "prepTime": "20 minutes",
-      "cookTime": "30 minutes",
-      "servings": 3,
       "author": "Chef Anil",
-      "image": "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg"
+      "image": "https://images.pexels.com/photos/5560763/pexels-photo-5560763.jpeg",
+      "id": "3"
     },
     {
-      "id": "4",
-      "title": "Butter Naan",
+      "title": "Butter Naan changed",
       "description": "Soft and fluffy Indian flatbread baked with butter.",
+      "prepTime": "15 minutes",
+      "cookTime": "20 minutes",
+      "servings": 4,
       "ingredients": [
         "2 cups all-purpose flour",
         "1/2 cup yogurt",
@@ -109,16 +111,16 @@
         "Roll dough into small rounds.",
         "Cook on hot tawa, brush with butter."
       ],
-      "prepTime": "15 minutes",
-      "cookTime": "20 minutes",
-      "servings": 4,
       "author": "Chef Meera",
-      "image": "https://images.pexels.com/photos/5835353/pexels-photo-5835353.jpeg"
+      "image": "",
+      "id": "4"
     },
     {
-      "id": "5",
-      "title": "Aloo Gobi",
+      "title": "Aloo Gobi edited",
       "description": "Spiced Indian potato and cauliflower curry.",
+      "prepTime": "10 minutes",
+      "cookTime": "25 minutes",
+      "servings": 3,
       "ingredients": [
         "2 potatoes",
         "1 cauliflower",
@@ -139,137 +141,41 @@
         "Add potatoes and cauliflower, cook covered until tender.",
         "Add garam masala and garnish with coriander."
       ],
-      "prepTime": "10 minutes",
-      "cookTime": "25 minutes",
-      "servings": 3,
       "author": "Chef Neha",
-      "image": "https://images.pexels.com/photos/33643298/pexels-photo-33643298.jpeg"
+      "image": "https://images.pexels.com/photos/33643298/pexels-photo-33643298.jpeg",
+      "id": "5"
     },
     {
-      "id": "6",
-      "title": "Rajma Masala",
-      "description": "Red kidney bean curry with rich spices, popular in North India.",
+      "id": 6,
+      "title": "added recipe",
+      "description": "asdfgg",
+      "prepTime": "23",
+      "cookTime": "12",
+      "servings": 1,
       "ingredients": [
-        "1 cup rajma (kidney beans)",
-        "2 onions",
-        "2 tomatoes",
-        "1 tsp ginger-garlic paste",
-        "1/2 tsp turmeric",
-        "1 tsp chili powder",
-        "1 tsp garam masala",
-        "2 tbsp oil",
-        "Salt",
-        "Fresh coriander"
+        "something"
       ],
       "steps": [
-        "Soak rajma overnight and boil until soft.",
-        "Heat oil, sauté onions and ginger-garlic paste.",
-        "Add tomatoes, turmeric, chili powder, cook to paste.",
-        "Add rajma and simmer 15 minutes.",
-        "Add garam masala and garnish."
+        "some steps"
       ],
-      "prepTime": "10 minutes",
-      "cookTime": "45 minutes",
-      "servings": 4,
-      "author": "Chef Ravi",
-      "image": "https://images.pexels.com/photos/12737912/pexels-photo-12737912.jpeg"
+      "author": "Admin",
+      "image": "https://plus.unsplash.com/premium_photo-1747939638870-0ff91f985e02?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw1fHx8ZW58MHx8fHx8"
     },
     {
-      "id": "7",
-      "title": "Chicken Biryani",
-      "description": "Fragrant layered rice dish with marinated chicken and spices.",
+      "id": 7,
+      "title": "new recipe",
+      "description": "dgsfvahsgvkqfghekcvfguvcf",
+      "prepTime": "12",
+      "cookTime": "11",
+      "servings": 1,
       "ingredients": [
-        "2 cups basmati rice",
-        "500g chicken",
-        "2 onions",
-        "2 tomatoes",
-        "1 cup yogurt",
-        "2 tsp ginger-garlic paste",
-        "1 tsp turmeric",
-        "1 tsp chili powder",
-        "2 tsp garam masala",
-        "Saffron strands",
-        "Mint leaves",
-        "Coriander leaves",
-        "Oil",
-        "Salt"
+        "sdefwerferftge3"
       ],
       "steps": [
-        "Marinate chicken with yogurt, spices, and salt for 2 hours.",
-        "Fry onions until golden, add tomatoes, cook to soft paste.",
-        "Add chicken and cook until 70% done.",
-        "Boil rice separately with salt and saffron.",
-        "Layer chicken and rice, cover, and cook on low heat 20 minutes.",
-        "Garnish with mint and coriander."
+        "wed23wr44"
       ],
-      "prepTime": "30 minutes",
-      "cookTime": "50 minutes",
-      "servings": 4,
-      "author": "Chef Arjun",
-      "image": "https://images.pexels.com/photos/7837978/pexels-photo-7837978.jpeg"
-    },
-    {
-      "id": "8",
-      "title": "Palak Paneer",
-      "description": "Spinach and paneer cooked with aromatic spices.",
-      "ingredients": [
-        "250g paneer",
-        "2 cups spinach",
-        "1 onion",
-        "2 tomatoes",
-        "1 tsp ginger-garlic paste",
-        "1/2 tsp turmeric",
-        "1 tsp chili powder",
-        "1 tsp cumin seeds",
-        "2 tbsp oil",
-        "Salt",
-        "Cream (optional)"
-      ],
-      "steps": [
-        "Blanch spinach and blend into a puree.",
-        "Heat oil, add cumin seeds and onions.",
-        "Add ginger-garlic paste and tomatoes.",
-        "Add spices and spinach puree.",
-        "Add paneer cubes, simmer 5 minutes.",
-        "Optional: add cream."
-      ],
-      "prepTime": "15 minutes",
-      "cookTime": "20 minutes",
-      "servings": 3,
-      "author": "Chef Suman",
-      "image": "https://images.pexels.com/photos/8625948/pexels-photo-8625948.jpeg"
-    },
-    {
-      "id": "9",
-      "title": "changed paneer",
-      "description": "xyz posting",
-      "ingredients": [
-        "paneer"
-      ],
-      "steps": [
-        "paneer changerd"
-      ],
-      "prepTime": "34",
-      "cookTime": "23",
-      "servings": "13",
-      "author": "PaneerPosting",
-      "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
-    },
-    {
-      "id": 10,
-      "title": "sdhfgladjsfhgddfju",
-      "description": "fjrlherityvbublaivtvlty8abvlietybvltoi4ybvqaelity",
-      "ingredients": [
-        "drsgwertqwe"
-      ],
-      "steps": [
-        "er5tyq45yw45y4"
-      ],
-      "prepTime": "34",
-      "cookTime": "344",
-      "servings": "4",
-      "author": "soumik",
-      "image": "https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg"
+      "author": "Admin",
+      "image": "https://plus.unsplash.com/premium_photo-1667861381787-62809f85ce65?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw5fHx8ZW58MHx8fHx8"
     }
   ]
 }

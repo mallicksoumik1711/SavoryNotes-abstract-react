@@ -4,7 +4,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap'
 
 function Favorites() {
   const { user } = useSelector(state => state.auth)
-  const recipes = useSelector(state => state.recipes) // array of all recipes
+  const recipes = useSelector(state => state.recipes) 
 
   if (!user)
     return (
