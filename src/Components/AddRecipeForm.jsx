@@ -66,12 +66,12 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
       alert("Please fill all fields before submitting!");
       return;
     }
-
+   
     try {
       if (editingRecipe) {
         await dispatch(
           updateRecipe({
-            id: editingRecipe.id,   
+            id: Number(editingRecipe.id),   
             recipe: {
               title: formData.title,
               description: formData.description,
@@ -87,7 +87,16 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
         ).unwrap();
         alert(`Recipe ID ${editingRecipe.id} updated successfully!`);
       } else {
-        const nextId = await getNextRecipeId();
+        const response = await fetch("http://localhost:3002/recipes");
+      const recipes = await response.json();
+
+      let maxId = 0;
+      recipes.forEach(r => {
+        const idNum = Number(r.id);
+        if (!isNaN(idNum) && idNum > maxId) maxId = idNum;
+      });
+
+      const nextId = maxId + 1;
         await dispatch(
           addRecipe({
             id: nextId,
@@ -121,24 +130,12 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
 
     } catch (error) {
       console.error(error);
-      alert("Error submitting recipe. Check console.", error);
+      alert("Error submitting recipe. Check console. " + error.message);
     }
   };
 
 
 
-  const getNextRecipeId = async () => {
-    const response = await fetch("http://localhost:3002/recipes");
-    const recipes = await response.json();
-
-    let maxId = 0;
-    recipes.forEach(r => {
-      const idNum = Number(r.id); 
-      if (!isNaN(idNum) && idNum > maxId) maxId = idNum;
-    });
-
-    return maxId + 1; 
-  };
 
 
   return (

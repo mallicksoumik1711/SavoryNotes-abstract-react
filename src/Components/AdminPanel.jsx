@@ -82,7 +82,7 @@ function AdminPanel() {
                     variant="danger"
                     size="sm"
                     onClick={async () => {
-                      await dispatch(deleteRecipe(String(recipe.id))); 
+                      await dispatch(deleteRecipe(recipe.id)); 
                       dispatch(fetchRecipes());
                     }}
                   >
