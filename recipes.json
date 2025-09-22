@@ -1,6 +1,7 @@
 {
   "recipes": [
     {
+      "id": "1",
       "title": "Paneer Butter Masala edited",
       "description": "Creamy tomato-based curry with soft cubes of paneer.",
       "prepTime": "10 minutes",
@@ -29,12 +30,24 @@
       ],
       "author": "Chef Raj",
       "image": "https://images.pexels.com/photos/9609838/pexels-photo-9609838.jpeg",
-      "id": "1"
+      "cuisine": "North Indian",
+      "difficulty": "Medium",
+      "calories": 320,
+      "rating": 4.7,
+      "tags": [
+        "vegetarian",
+        "curry",
+        "paneer"
+      ],
+      "dateAdded": "2025-09-22"
     },
     {
       "id": "2",
       "title": "Chole (Chickpea Curry)",
       "description": "Spicy and tangy chickpea curry from North India.",
+      "prepTime": "10 minutes",
+      "cookTime": "40 minutes",
+      "servings": 4,
       "ingredients": [
         "1 cup chickpeas",
         "2 onions",
@@ -55,14 +68,22 @@
         "Add boiled chickpeas and simmer for 10 minutes.",
         "Garnish with coriander."
       ],
-      "prepTime": "10 minutes",
-      "cookTime": "40 minutes",
-      "servings": 4,
       "author": "Chef Priya",
-      "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg"
+      "image": "https://images.pexels.com/photos/11818239/pexels-photo-11818239.jpeg",
+      "cuisine": "Punjabi",
+      "difficulty": "Medium",
+      "calories": 280,
+      "rating": 4.6,
+      "tags": [
+        "vegan",
+        "gluten-free",
+        "spicy"
+      ],
+      "dateAdded": "2025-09-22"
     },
     {
-      "title": "Masala Dosa ",
+      "id": "3",
+      "title": "Masala Dosa is also edited",
       "description": "Crispy South Indian rice crepes stuffed with spiced potato filling.",
       "prepTime": "20 minutes",
       "cookTime": "30 minutes",
@@ -87,10 +108,20 @@
         "Place filling, fold dosa, cook until golden."
       ],
       "author": "Chef Anil",
-      "image": "",
-      "id": "3"
+      "image": "https://images.pexels.com/photos/12392915/pexels-photo-12392915.jpeg",
+      "cuisine": "South Indian",
+      "difficulty": "Hard",
+      "calories": 250,
+      "rating": 4.8,
+      "tags": [
+        "vegetarian",
+        "street food",
+        "gluten-free"
+      ],
+      "dateAdded": "2025-09-22"
     },
     {
+      "id": "4",
       "title": "Butter Naan changed",
       "description": "Soft and fluffy Indian flatbread baked with butter.",
       "prepTime": "15 minutes",
@@ -112,10 +143,19 @@
         "Cook on hot tawa, brush with butter."
       ],
       "author": "Chef Meera",
-      "image": "",
-      "id": "4"
+      "image": "https://images.pexels.com/photos/1117862/pexels-photo-1117862.jpeg",
+      "cuisine": "North Indian",
+      "difficulty": "Easy",
+      "calories": 190,
+      "rating": 4.5,
+      "tags": [
+        "bread",
+        "vegetarian"
+      ],
+      "dateAdded": "2025-09-22"
     },
     {
+      "id": "5",
       "title": "Aloo Gobi edited",
       "description": "Spiced Indian potato and cauliflower curry.",
       "prepTime": "10 minutes",
@@ -143,55 +183,130 @@
       ],
       "author": "Chef Neha",
       "image": "https://images.pexels.com/photos/33643298/pexels-photo-33643298.jpeg",
-      "id": "5"
+      "cuisine": "North Indian",
+      "difficulty": "Easy",
+      "calories": 210,
+      "rating": 4.4,
+      "tags": [
+        "vegan",
+        "gluten-free",
+        "curry"
+      ],
+      "dateAdded": "2025-09-22"
     },
     {
-      "title": "Rajma",
-      "description": "Red kidney bean curry with rich spices, popular in North India.",
-      "prepTime": "10 minutes",
+      "id": "6",
+      "title": "Palak Paneer",
+      "description": "Spinach curry with paneer cubes cooked in mild spices.",
+      "prepTime": "15 minutes",
+      "cookTime": "20 minutes",
+      "servings": 3,
+      "ingredients": [
+        "200g paneer",
+        "250g spinach",
+        "1 onion",
+        "2 tomatoes",
+        "1 tsp ginger-garlic paste",
+        "1/2 tsp cumin seeds",
+        "1/2 tsp garam masala",
+        "2 tbsp oil",
+        "Salt"
+      ],
+      "steps": [
+        "Blanch spinach and puree it.",
+        "Heat oil, add cumin, onion, and sauté.",
+        "Add ginger-garlic paste, tomatoes, cook to paste.",
+        "Add spinach puree, paneer, garam masala.",
+        "Simmer for 5 minutes."
+      ],
+      "author": "Chef Radhika",
+      "image": "https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg",
+      "cuisine": "North Indian",
+      "difficulty": "Medium",
+      "calories": 300,
+      "rating": 4.6,
+      "tags": [
+        "vegetarian",
+        "healthy",
+        "gluten-free"
+      ],
+      "dateAdded": "2025-09-22"
+    },
+    {
+      "id": "7",
+      "title": "Chicken Biryani",
+      "description": "Fragrant basmati rice cooked with spiced chicken and herbs.",
+      "prepTime": "30 minutes",
       "cookTime": "45 minutes",
-      "servings": 1,
+      "servings": 5,
       "ingredients": [
-        "Rajma Masalas"
+        "500g chicken",
+        "2 cups basmati rice",
+        "2 onions",
+        "2 tomatoes",
+        "1/2 cup yogurt",
+        "1 tbsp biryani masala",
+        "1 tsp ginger-garlic paste",
+        "Whole spices",
+        "Saffron milk",
+        "Oil",
+        "Salt"
       ],
       "steps": [
-        "vu"
+        "Marinate chicken with yogurt, spices, and rest 30 min.",
+        "Cook rice 70% and keep aside.",
+        "Fry onions, add chicken, tomatoes, cook until done.",
+        "Layer chicken and rice, drizzle saffron milk.",
+        "Dum cook for 20 minutes."
       ],
-      "author": "Admin",
-      "image": "",
-      "id": "8"
+      "author": "Chef Arjun",
+      "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg",
+      "cuisine": "Hyderabadi",
+      "difficulty": "Hard",
+      "calories": 480,
+      "rating": 4.9,
+      "tags": [
+        "non-vegetarian",
+        "rice",
+        "spicy"
+      ],
+      "dateAdded": "2025-09-22"
     },
     {
-      "id": "9",
-      "title": "sd",
-      "description": "ss",
-      "prepTime": "23",
-      "cookTime": "50",
-      "servings": 1,
+      "id": "8",
+      "title": "Gulab Jamun",
+      "description": "Soft fried dumplings soaked in cardamom sugar syrup.",
+      "prepTime": "20 minutes",
+      "cookTime": "25 minutes",
+      "servings": 6,
       "ingredients": [
-        "ed"
+        "1 cup khoya",
+        "1/4 cup flour",
+        "1/4 tsp baking soda",
+        "Oil for frying",
+        "2 cups sugar",
+        "2 cups water",
+        "Cardamom",
+        "Rose water"
       ],
       "steps": [
-        "fdd"
+        "Mix khoya, flour, soda into dough.",
+        "Shape into balls and fry on low heat.",
+        "Boil sugar with water, cardamom, rose water.",
+        "Soak fried balls in syrup."
       ],
-      "author": "Admin",
-      "image": ""
-    },
-    {
-      "id": 12,
-      "title": "chicken",
-      "description": "shb",
-      "prepTime": "30",
-      "cookTime": "28",
-      "servings": 1,
-      "ingredients": [
-        "92"
+      "author": "Chef Kavita",
+      "image": "https://images.pexels.com/photos/4109999/pexels-photo-4109999.jpeg",
+      "cuisine": "Indian Dessert",
+      "difficulty": "Medium",
+      "calories": 320,
+      "rating": 4.8,
+      "tags": [
+        "dessert",
+        "sweet",
+        "festival"
       ],
-      "steps": [
-        "bbs "
-      ],
-      "author": "Admin",
-      "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+      "dateAdded": "2025-09-22"
     }
   ]
 }

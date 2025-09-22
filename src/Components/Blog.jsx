@@ -26,7 +26,7 @@ function Blog() {
         flavorful, and restaurant-quality right at home. We cover paneer prep, masala blending, 
         and tips to get the texture perfect.
       `,
-      image: "https://images.pexels.com/photos/1391487/pexels-photo-1391487.jpeg",
+      image: "https://static.vecteezy.com/system/resources/thumbnails/030/323/030/small_2x/delicious-paneer-bater-masala-dish-in-an-indian-restaurant-generative-ai-photo.jpg",
     },
     {
       id: 3,
