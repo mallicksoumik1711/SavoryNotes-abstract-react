@@ -91,31 +91,6 @@
       "id": "3"
     },
     {
-      "title": "Butter Naan changed",
-      "description": "Soft and fluffy Indian flatbread baked with butter.",
-      "prepTime": "15 minutes",
-      "cookTime": "20 minutes",
-      "servings": 4,
-      "ingredients": [
-        "2 cups all-purpose flour",
-        "1/2 cup yogurt",
-        "1/2 tsp baking powder",
-        "1/2 tsp baking soda",
-        "1 tsp sugar",
-        "Salt",
-        "Butter"
-      ],
-      "steps": [
-        "Mix flour, baking powder, baking soda, salt, sugar, and yogurt into dough.",
-        "Knead for 10 minutes and let it rest for 1 hour.",
-        "Roll dough into small rounds.",
-        "Cook on hot tawa, brush with butter."
-      ],
-      "author": "Chef Meera",
-      "image": "",
-      "id": "4"
-    },
-    {
       "title": "Aloo Gobi edited",
       "description": "Spiced Indian potato and cauliflower curry.",
       "prepTime": "10 minutes",
@@ -146,24 +121,7 @@
       "id": "5"
     },
     {
-      "title": "Rajma",
-      "description": "Red kidney bean curry with rich spices, popular in North India.",
-      "prepTime": "10 minutes",
-      "cookTime": "45 minutes",
-      "servings": 1,
-      "ingredients": [
-        "Rajma Masalas"
-      ],
-      "steps": [
-        "vu"
-      ],
-      "author": "Admin",
-      "image": "",
-      "id": "8"
-    },
-    {
-      "id": "9",
-      "title": "sd",
+      "title": "sd absc",
       "description": "ss",
       "prepTime": "23",
       "cookTime": "50",
@@ -175,23 +133,24 @@
         "fdd"
       ],
       "author": "Admin",
-      "image": ""
+      "image": "",
+      "id": "9"
     },
     {
-      "id": 12,
-      "title": "chicken",
-      "description": "shb",
-      "prepTime": "30",
-      "cookTime": "28",
+      "id": 10,
+      "title": "gshss",
+      "description": "sbsj",
+      "prepTime": "10",
+      "cookTime": "12",
       "servings": 1,
       "ingredients": [
-        "92"
+        "sjss"
       ],
       "steps": [
-        "bbs "
+        "aja"
       ],
       "author": "Admin",
-      "image": "https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg"
+      "image": ""
     }
   ]
 }

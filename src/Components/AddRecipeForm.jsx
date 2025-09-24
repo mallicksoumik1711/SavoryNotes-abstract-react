@@ -99,7 +99,7 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
       const nextId = maxId + 1;
         await dispatch(
           addRecipe({
-            id: nextId,
+            id: String(nextId),
             title: formData.title,
             description: formData.description,
             prepTime: formData.prepTime,
