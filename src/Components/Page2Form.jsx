@@ -4,10 +4,28 @@ import { Add, Delete } from "@mui/icons-material";
 
 const Page2Form = ({ formData, setFormData }) => {
   const handleIngredientChange = (index, value) => {
+    const trimmedValue = value.trim();
     const newIngredients = [...formData.ingredients];
     newIngredients[index] = value;
     setFormData({ ...formData, ingredients: newIngredients });
+
+     // Prevent duplicates except for empty input
+    if (
+      trimmedValue === "" ||
+      !formData.ingredients
+        .filter((_, i) => i !== index) // exclude current index
+        .map((ing) => ing.trim().toLowerCase())
+        .includes(trimmedValue.toLowerCase())
+    ) {
+      newIngredients[index] = value;
+      setFormData({ ...formData, ingredients: newIngredients });
+    } else {
+      alert("Ingredient must be unique!");
+    }
   };
+
+ 
+  
 
   const addIngredient = () => {
     setFormData({ ...formData, ingredients: [...formData.ingredients, ""] });

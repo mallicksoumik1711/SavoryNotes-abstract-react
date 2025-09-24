@@ -271,42 +271,6 @@
         "spicy"
       ],
       "dateAdded": "2025-09-22"
-    },
-    {
-      "id": "8",
-      "title": "Gulab Jamun",
-      "description": "Soft fried dumplings soaked in cardamom sugar syrup.",
-      "prepTime": "20 minutes",
-      "cookTime": "25 minutes",
-      "servings": 6,
-      "ingredients": [
-        "1 cup khoya",
-        "1/4 cup flour",
-        "1/4 tsp baking soda",
-        "Oil for frying",
-        "2 cups sugar",
-        "2 cups water",
-        "Cardamom",
-        "Rose water"
-      ],
-      "steps": [
-        "Mix khoya, flour, soda into dough.",
-        "Shape into balls and fry on low heat.",
-        "Boil sugar with water, cardamom, rose water.",
-        "Soak fried balls in syrup."
-      ],
-      "author": "Chef Kavita",
-      "image": "https://images.pexels.com/photos/4109999/pexels-photo-4109999.jpeg",
-      "cuisine": "Indian Dessert",
-      "difficulty": "Medium",
-      "calories": 320,
-      "rating": 4.8,
-      "tags": [
-        "dessert",
-        "sweet",
-        "festival"
-      ],
-      "dateAdded": "2025-09-22"
     }
   ]
 }

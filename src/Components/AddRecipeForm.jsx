@@ -8,9 +8,11 @@ import { addRecipe, fetchRecipes, updateRecipe } from "../Redux/recipesSlice";
 
 const steps = ["Recipe Details", "Ingredients", "Instructions"];
 
+
 const AddRecipeForm = ({ onClose, editingRecipe }) => {
   const dispatch = useDispatch();
   const [activeStep, setActiveStep] = useState(0);
+  const [completedSteps, setCompletedSteps] = useState({});
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -46,7 +48,15 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
       );
     }
     if (activeStep === 1) {
-      return formData.ingredients.every((ing) => ing.trim() !== "");
+      const trimmedIngredients = formData.ingredients.map((ing) =>
+        ing.trim().toLowerCase()
+      );
+      const uniqueIngredients = new Set(trimmedIngredients);
+
+      return (
+        trimmedIngredients.every((ing) => ing !== "") &&
+        uniqueIngredients.size === trimmedIngredients.length
+      );
     }
     if (activeStep === 2) {
       return formData.steps.every((step) => step.trim() !== "");
@@ -54,24 +64,43 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
     return true;
   };
 
+
+  useEffect(() => {
+    setCompletedSteps({
+      0: formData.title.trim() && formData.description.trim() && formData.prepTime.trim() && formData.cookTime.trim() && formData.servings > 0,
+      1: formData.ingredients.every((ing) => ing.trim() !== ""),
+      2: formData.steps.every((step) => step.trim() !== ""),
+    });
+  }, [formData]);
+
+  // When moving forward
   const handleNext = () => {
-    if (validateStep()) setActiveStep((prev) => prev + 1);
-    else alert("Please fill all fields in this step.");
+    if (validateStep()) {
+      setCompletedSteps((prev) => ({
+        ...prev,
+        [activeStep]: true, // mark current step completed
+      }));
+      setActiveStep((prev) => prev + 1);
+    } else {
+      alert("Please fill all fields in this step.");
+    }
   };
 
-  const handleBack = () => setActiveStep((prev) => prev - 1);
-
+  // When moving backward
+  const handleBack = () => {
+    setActiveStep((prev) => prev - 1);
+  };
   const handleSubmit = async () => {
     if (!validateStep()) {
       alert("Please fill all fields before submitting!");
       return;
     }
-   
+
     try {
       if (editingRecipe) {
         await dispatch(
           updateRecipe({
-            id: Number(editingRecipe.id),   
+            id: Number(editingRecipe.id),
             recipe: {
               title: formData.title,
               description: formData.description,
@@ -88,18 +117,18 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
         alert(`Recipe ID ${editingRecipe.id} updated successfully!`);
       } else {
         const response = await fetch("http://localhost:3002/recipes");
-      const recipes = await response.json();
+        const recipes = await response.json();
 
-      let maxId = 0;
-      recipes.forEach(r => {
-        const idNum = Number(r.id);
-        if (!isNaN(idNum) && idNum > maxId) maxId = idNum;
-      });
+        let maxId = 0;
+        recipes.forEach(r => {
+          const idNum = Number(r.id);
+          if (!isNaN(idNum) && idNum > maxId) maxId = idNum;
+        });
 
-      const nextId = maxId + 1;
+        const nextId = maxId + 1;
         await dispatch(
           addRecipe({
-            id: String (nextId),
+            id: String(nextId),
             title: formData.title,
             description: formData.description,
             prepTime: formData.prepTime,
@@ -114,7 +143,7 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
         alert(`Recipe added successfully with ID: ${nextId}`);
       }
 
-      await dispatch(fetchRecipes()); 
+      await dispatch(fetchRecipes());
 
       setFormData({
         title: "",
@@ -126,6 +155,7 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
         steps: [""],
       });
       setActiveStep(0);
+      setCompletedSteps({}); // Reset ticks after submit
       if (onClose) onClose();
 
     } catch (error) {
@@ -150,12 +180,11 @@ const AddRecipeForm = ({ onClose, editingRecipe }) => {
     >
       <Stepper activeStep={activeStep} alternativeLabel>
         {steps.map((label, index) => (
-          <Step key={label} completed={activeStep > index}>
+          <Step key={label} completed={!!completedSteps[index]}>
             <StepLabel>{label}</StepLabel>
           </Step>
         ))}
       </Stepper>
-
       <Box sx={{ marginTop: "20px" }}>
         {activeStep === 0 && <Page1Form formData={formData} setFormData={setFormData} />}
         {activeStep === 1 && <Page2Form formData={formData} setFormData={setFormData} />}
